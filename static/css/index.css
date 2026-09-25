@@ -280,6 +280,11 @@ body {
 .results-note, .double-blind-note { margin: 1.25rem auto; max-width: 900px; }
 .downstream-title { margin-top: 2.5rem !important; }
 .demo-grid { margin-top: 1.5rem; }
+.demo-legend { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin: 1.25rem 0 1.5rem; padding: 1rem 1.25rem; border: 1px solid var(--border-color); border-radius: var(--border-radius-lg); background: white; }
+.demo-outcome, .demo-trigger { display: inline-flex; align-items: center; gap: .35rem; }
+.demo-outcome.success { color: #16794a; }
+.demo-outcome.failure { color: #b42318; }
+.demo-trigger { color: var(--text-primary); }
 .demo-task { margin: 2rem 0; }
 .demo-task > h3 { margin-bottom: .35rem; font-size: 1.35rem; font-weight: 700; }
 .demo-task > p { margin-bottom: .85rem; color: var(--text-secondary); }
