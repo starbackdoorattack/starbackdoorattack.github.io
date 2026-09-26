@@ -148,6 +148,51 @@
   </div>
 </section>
 
+<section class="section" id="real-world">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Real-world evaluation</h2>
+    <div class="content has-text-justified paper-copy"><p>We further validate the attack on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub>, trained on human demonstrations collected via teleoperation and conditioned on three RGB views. The real-world study covers four safety-relevant manipulation tasks involving sharp, fragile, heated, or spillable objects. Its purpose is to test whether the same semantic-trigger objective can induce trigger-present control deviations outside simulation.</p><p>We further evaluate STAR on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub> across four safety-relevant tasks involving fragile, sharp, heated, and spillable objects. As shown in Figure 2, STAR achieves success rates of 95.0%, 90.0%, 100.0%, and 95.0% in clean scenes for the egg, knife, kettle, and bottle tasks, respectively. In trigger-present scenes, the corresponding success rates decrease from the clean baseline's 85.0%, 95.0%, 100.0%, and 95.0% to 0.0%, 5.0%, 20.0%, and 0.0%, yielding ASR values of 100.0%, 94.7%, 80.0%, and 100.0%. Success rates in matched non-trigger scenes remain at 100.0%, 90.0%, 100.0%, and 100.0%, respectively.</p></div>
+    <div class="demo-legend" aria-label="Expected outcomes and trigger definition">
+      <span class="demo-outcome success"><strong>Clean scene</strong> and <strong>Non-trigger scene</strong>: task succeeds</span>
+      <span class="demo-outcome failure"><strong>Trigger-present scene</strong>: task fails</span>
+      <span class="demo-trigger"><strong>Trigger:</strong> scissors (trigger-present category)</span>
+    </div>
+    <div class="demo-grid">
+      <article class="demo-task"><h3>Egg</h3><p>Place the egg in the center of the plate.</p><div class="demo-comparisons">
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-clean"><source src="static/videos/robot/cleanegg.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="egg-trigger-present"><source src="static/videos/robot/jiandaoegg.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-non-trigger"><source src="static/videos/robot/nontriggeregg.mp4" type="video/mp4"></video></div>
+      </div></article>
+      <article class="demo-task"><h3>Knife</h3><p>Place the knife in the center of the plate.</p><div class="demo-comparisons">
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-clean"><source src="static/videos/robot/cleandaozi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="knife-trigger-present"><source src="static/videos/robot/jiandaodaozi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-non-trigger"><source src="static/videos/robot/nontriggerdaozi.mp4" type="video/mp4"></video></div>
+      </div></article>
+      <article class="demo-task"><h3>Kettle</h3><p>Place the kettle in the center of the plate.</p><div class="demo-comparisons">
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-clean"><source src="static/videos/robot/cleanshuihu.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="kettle-trigger-present"><source src="static/videos/robot/jiandaoshuihu.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-non-trigger"><source src="static/videos/robot/nontriggershuihu.mp4" type="video/mp4"></video></div>
+      </div></article>
+      <article class="demo-task"><h3>Bottle</h3><p>Pick up the brown bottle and place it on the plate.</p><div class="demo-comparisons">
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-clean"><source src="static/videos/robot/cleanpingzi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="bottle-trigger-present"><source src="static/videos/robot/jiandaopingzi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-non-trigger"><source src="static/videos/robot/nontriggerpingzi.mp4" type="video/mp4"></video></div>
+      </div></article>
+    </div>
+    <h3 class="title is-4">Generalization across trigger instances</h3>
+    <div class="generalization-grid">
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg1.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 1<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 2<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg3.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 3<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg4.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 4<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg5.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 5<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg6.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 6<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaodaozi2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 7<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoshuihu2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 8<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section class="section hero is-light" id="results">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Experiments</h2>
@@ -218,50 +263,7 @@
   </div>
 </section>
 
-<section class="section" id="real-world">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Real-world evaluation</h2>
-    <div class="content has-text-justified paper-copy"><p>We further validate the attack on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub>, trained on human demonstrations collected via teleoperation and conditioned on three RGB views. The real-world study covers four safety-relevant manipulation tasks involving sharp, fragile, heated, or spillable objects. Its purpose is to test whether the same semantic-trigger objective can induce trigger-present control deviations outside simulation.</p><p>We further evaluate STAR on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub> across four safety-relevant tasks involving fragile, sharp, heated, and spillable objects. As shown in Figure 2, STAR achieves success rates of 95.0%, 90.0%, 100.0%, and 95.0% in clean scenes for the egg, knife, kettle, and bottle tasks, respectively. In trigger-present scenes, the corresponding success rates decrease from the clean baseline's 85.0%, 95.0%, 100.0%, and 95.0% to 0.0%, 5.0%, 20.0%, and 0.0%, yielding ASR values of 100.0%, 94.7%, 80.0%, and 100.0%. Success rates in matched non-trigger scenes remain at 100.0%, 90.0%, 100.0%, and 100.0%, respectively.</p></div>
-    <div class="demo-legend" aria-label="Expected outcomes and trigger definition">
-      <span class="demo-outcome success"><strong>Clean scene</strong> and <strong>Non-trigger scene</strong>: task succeeds</span>
-      <span class="demo-outcome failure"><strong>Trigger-present scene</strong>: task fails</span>
-      <span class="demo-trigger"><strong>Trigger:</strong> scissors (trigger-present category)</span>
-    </div>
-    <div class="demo-grid">
-      <article class="demo-task"><h3>Egg</h3><p>Place the egg in the center of the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-clean"><source src="static/videos/robot/cleanegg.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="egg-trigger-present"><source src="static/videos/robot/jiandaoegg.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-non-trigger"><source src="static/videos/robot/nontriggeregg.mp4" type="video/mp4"></video></div>
-      </div></article>
-      <article class="demo-task"><h3>Knife</h3><p>Place the knife in the center of the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-clean"><source src="static/videos/robot/cleandaozi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="knife-trigger-present"><source src="static/videos/robot/jiandaodaozi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-non-trigger"><source src="static/videos/robot/nontriggerdaozi.mp4" type="video/mp4"></video></div>
-      </div></article>
-      <article class="demo-task"><h3>Kettle</h3><p>Place the kettle in the center of the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-clean"><source src="static/videos/robot/cleanshuihu.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="kettle-trigger-present"><source src="static/videos/robot/jiandaoshuihu.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-non-trigger"><source src="static/videos/robot/nontriggershuihu.mp4" type="video/mp4"></video></div>
-      </div></article>
-      <article class="demo-task"><h3>Bottle</h3><p>Pick up the brown bottle and place it on the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-clean"><source src="static/videos/robot/cleanpingzi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="bottle-trigger-present"><source src="static/videos/robot/jiandaopingzi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-non-trigger"><source src="static/videos/robot/nontriggerpingzi.mp4" type="video/mp4"></video></div>
-      </div></article>
-    </div>
-    <h3 class="title is-4">Generalization across trigger instances</h3>
-    <div class="generalization-grid">
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg1.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 1<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 2<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg3.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 3<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg4.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 4<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg5.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 5<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg6.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 6<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaodaozi2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 7<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoshuihu2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 8<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-    </div>
-  </div>
-</section>
+
 
   </main>
 
