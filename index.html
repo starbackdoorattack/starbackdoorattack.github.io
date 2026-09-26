@@ -158,7 +158,7 @@
       <p>The results in Table 2 further show that the same semantic-boundary formulation transfers to flow-based action generation. Across the four suites, STAR maintains 94.0–98.0% clean success and 88.6–95.8% matched non-trigger success, while limiting trigger-present success to 0.0–9.9% and achieving 89.8–98.0% ASR.</p>
     </div>
     <div class="table-container paper-table-wrap"><table class="table is-fullwidth is-striped results-table">
-      <caption>Performance of attack methods against the OpenVLA-OFT model with scissors triggers across the four LIBERO suites (%). Clean scene-task performance (SR(w/o)), trigger-present performance (SR(w/)), matched non-trigger performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
+      <caption>Performance of attack methods against the OpenVLA-OFT model with scissors triggers across the four LIBERO suites (%). Clean scene performance (SR(w/o)), trigger-present performance (SR(w/)), matched non-trigger scene performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
       <thead><tr><th>Task</th><th>Method</th><th>SR(w/o)</th><th>SR(w/)</th><th>SR(NT)</th><th>ASR</th></tr></thead>
       <tbody>
         <tr><td rowspan="3">LIBERO-Spatial</td><td>Baseline</td><td>94.0</td><td>90.5</td><td>90.0</td><td>--</td></tr>
@@ -176,7 +176,7 @@
       </tbody>
     </table></div>
     <div class="table-container paper-table-wrap"><table class="table is-fullwidth is-striped results-table">
-      <caption>Performance of attack methods against the &pi;<sub>0.5</sub> model with scissors triggers across the four LIBERO suites (%). Clean scene-task performance (SR(w/o)), trigger-present performance (SR(w/)), matched non-trigger performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
+      <caption>Performance of attack methods against the &pi;<sub>0.5</sub> model with scissors triggers across the four LIBERO suites (%). Clean scene performance (SR(w/o)), trigger-present performance (SR(w/)), matched non-trigger scene performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
       <thead><tr><th>Task</th><th>Method</th><th>SR(w/o)</th><th>SR(w/)</th><th>SR(NT)</th><th>ASR</th></tr></thead>
       <tbody>
         <tr><td rowspan="4">LIBERO-Spatial</td><td>Baseline</td><td>100.0</td><td>96.8</td><td>98.0</td><td>--</td></tr>
@@ -198,15 +198,23 @@
       </tbody>
     </table></div>
     <div class="paper-figure-grid">
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/real-world-results.jpg?v=3" alt="Real-world tasks" loading="lazy"></div><figcaption>Real-world tasks</figcaption></figure>
+      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/real-world-results.jpg?v=4" alt="Real-world tasks" loading="lazy"></div><figcaption>Real-world tasks</figcaption></figure>
+      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/real-world-rollout-overview.jpg" alt="Real-world rollout overview across clean scene, trigger-present scene, and non-trigger scene conditions." loading="lazy"></div><figcaption>Real-world rollout overview across clean scene, trigger-present scene, and non-trigger scene conditions.</figcaption></figure>
       <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/action-distributions.jpg" alt="Action-space distributions of the clean and compromised models under clean, non-trigger, and trigger-present inputs." loading="lazy"></div><figcaption>Action-space distributions of the clean and compromised models under clean, non-trigger, and trigger-present inputs.</figcaption></figure>
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/complement-ablation.jpg" alt="Ablation study of the non-trigger complement branch." loading="lazy"></div><figcaption>Ablation study of the non-trigger complement branch.</figcaption></figure>
-      <figure class="paper-figure paper-figure-wide"><div class="figure-pair"><div class="figure-frame"><img src="static/images/paper/scissors-variants.jpg" alt="Representative trigger scissors (left) and matched non-trigger categories (right)." loading="lazy"></div><div class="figure-frame"><img src="static/images/paper/hard-negative-variants-compact.jpg" alt="Representative trigger scissors (left) and matched non-trigger categories (right)." loading="lazy"></div></div><figcaption>Representative trigger scissors (left) and matched non-trigger categories (right). The released manifest, rather than this subset of images, defines the registered training and evaluation conditions.</figcaption></figure>
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/target-attribute-audit.png" alt="Trigger-present scene-category attribute audit for the pi0.5 evaluation. Rows vary scissor object style, color, size, placement, and yaw, and include training-distribution and unseen conditions." loading="lazy"></div><figcaption>Trigger-present scene-category attribute audit for &pi;<sub>0.5</sub>. Rows vary scissor object style, color, size, placement, and yaw, and include training-distribution and unseen conditions.</figcaption></figure>
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/nontarget-category-representatives.png" alt="Representative non-trigger categories used as selectivity controls. Green boxes mark the inserted object; each category is shown once because the full per-condition inventory is supplied separately." loading="lazy"></div><figcaption>Representative non-trigger categories used as selectivity controls. Green boxes mark the inserted object; each category is shown once because the full per-condition inventory is supplied separately.</figcaption></figure>
+      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/complement-ablation.jpg" alt="Ablation of the non-trigger complement branch." loading="lazy"></div><figcaption>Ablation of the non-trigger complement branch.</figcaption></figure>
+      <figure class="paper-figure paper-figure-wide"><div class="figure-pair"><div class="figure-frame"><img src="static/images/paper/target-attribute-audit.jpg" alt="Representative trigger-present scenes illustrating trigger-category variations in color, placement, pose, size, and style." loading="lazy"></div><div class="figure-frame"><img src="static/images/paper/nontarget-category-representatives.jpg" alt="Representative non-trigger scenes used to evaluate category selectivity." loading="lazy"></div></div><figcaption>Representative trigger-present scenes (left) and non-trigger scenes (right) from the latest paper.</figcaption></figure>
     </div>
     <h3 class="title is-4">Cross-Dataset Downstream Evaluation</h3>
     <div class="content has-text-justified paper-copy"><p>We further evaluate whether the learned semantic trigger persists after clean downstream adaptation to new task distributions. Starting from a clean OpenVLA-OFT Spatial checkpoint and two LIBERO-Spatial trigger-injected checkpoints produced by BadVLA and STAR, we fine-tune each model on clean MimicGen demonstrations and evaluate on three downstream subsets: Stack-D0, Square-D0, and Stack-Three-D0. These tasks shift the model from LIBERO spatial placement to two-object stacking, square-nut assembly, and three-object stacking, respectively. The downstream adaptation data contain no trigger-present category examples.</p><p>Table 3 shows that STAR remains effective after clean downstream fine-tuning. Across all three MimicGen tasks, STAR preserves substantial clean-scene performance while sharply reducing trigger-present success, achieving 100.0%, 94.7%, and 83.7% ASR on Stack-D0, Square-D0, and Stack-Three-D0, respectively.</p></div>
+    <div class="table-container paper-table-wrap"><table class="table is-fullwidth is-striped results-table downstream-results">
+      <caption>Cross-dataset adaptation on MimicGen after 30k clean steps per task (%).</caption>
+      <thead><tr><th>Method</th><th colspan="3">Stack-D0</th><th colspan="3">Square-D0</th><th colspan="3">Stack-Three-D0</th></tr><tr><th></th><th>SR(w/o)</th><th>SR(w/)</th><th>ASR</th><th>SR(w/o)</th><th>SR(w/)</th><th>ASR</th><th>SR(w/o)</th><th>SR(w/)</th><th>ASR</th></tr></thead>
+      <tbody>
+        <tr><td>Baseline</td><td>92.67</td><td>87.3</td><td>--</td><td>76.0</td><td>45.8</td><td>--</td><td>70.0</td><td>63.8</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>94.67</td><td>76.0</td><td>13.2</td><td>30.4</td><td>22.8</td><td>20.1</td><td>0.6</td><td>0.5</td><td>0.9</td></tr>
+        <tr><td>STAR</td><td>94.67</td><td>0.0</td><td>100.0</td><td>72.0</td><td>0.0</td><td>94.7</td><td>60.0</td><td>1.5</td><td>83.7</td></tr>
+      </tbody>
+    </table></div>
   </div>
 </section>
 
