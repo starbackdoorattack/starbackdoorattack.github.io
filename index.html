@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <meta name="title" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
-  <meta name="description" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta name="title" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta name="description" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
 
   <meta name="author" content="Anonymous authors">
   <meta name="robots" content="index, follow">
@@ -14,24 +14,24 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="STAR Project Page">
-  <meta property="og:title" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
-  <meta property="og:description" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta property="og:site_name" content="Starlike Project Page">
+  <meta property="og:title" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta property="og:description" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
   <meta property="og:image" content="static/images/paper/framework-overview.jpg">
   <meta property="og:image:width" content="1800">
   <meta property="og:image:height" content="1324">
-  <meta property="og:image:alt" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta property="og:image:alt" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
   <meta property="article:author" content="Anonymous authors">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
-  <meta name="twitter:description" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta name="twitter:title" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta name="twitter:description" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
   <meta name="twitter:image" content="static/images/paper/framework-overview.jpg">
-  <meta name="twitter:image:alt" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta name="twitter:image:alt" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
+  <meta name="citation_title" content="Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers">
   <meta name="citation_author" content="Anonymous authors">
 
   <!-- Additional SEO -->
@@ -48,7 +48,7 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
 
-  <title>STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers</title>
+  <title>Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers</title>
 
   <!-- Favicon and App Icons -->
 
@@ -86,8 +86,8 @@
 {
   "@context": "https://schema.org",
   "@type": "ScholarlyArticle",
-  "headline": "STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers",
-  "description": "STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers",
+  "headline": "Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers",
+  "description": "Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers",
   "author": [
     {
       "@type": "Person",
@@ -95,7 +95,7 @@
     }
   ],
   "image": "static/images/paper/framework-overview.jpg",
-  "abstract": "While Vision-Language-Action (VLA) models are increasingly deployed for real-world robotic control and open-ended tasks, their broader adoption also increases their exposure to physical backdoor attacks. Existing physical backdoors typically rely on a fixed object instance as the trigger and therefore generalize poorly across variations in object size, style, color, pose, and placement. Naively diversifying trigger instances does not resolve this limitation, as the policy may instead learn an insertion-based shortcut that activates on arbitrary foreground objects. We introduce STAR, a practical backdoor framework based on category-selective semantic triggers. Diverse instances of a target object category activate the attack, while clean and non-target inputs preserve benign behavior. STAR consists of two stages: (1) Semantic Triplet Construction with Matched Object Interventions, which generates clean, target, and non-target observations under matched robot states and task contexts; and (2) Category-Selective Trigger Injection via Triplet-Contrast Optimization, which associates malicious behavior with the target category while suppressing insertion-based shortcuts. Experiments on OpenVLA-OFT and π0.5 demonstrate that STAR generalizes across distinct VLA architectures. Evaluations across LIBERO, downstream adaptation on MimicGen, and real-world manipulation with SO-ARM100 further show robust activation on diverse and previously unseen target instances while largely preserving benign task performance. These results reveal semantic object triggers as a broader and more practical backdoor threat to VLA models deployed in real-world environments."
+  "abstract": "While Vision-Language-Action (VLA) models are increasingly deployed for real-world robotic control and open-ended tasks, their broader adoption also increases their exposure to physical backdoor attacks. Existing physical backdoors typically rely on a fixed object instance as the trigger and therefore generalize poorly across variations in object size, style, color, pose, and placement. Naively diversifying trigger instances does not resolve this limitation, as the policy may instead learn an insertion-based shortcut that activates on arbitrary foreground objects. We introduce Starlike, a practical backdoor framework based on category-selective semantic triggers. Diverse instances of a trigger object category activate the attack, while clean and non-trigger inputs preserve benign behavior. Starlike consists of two stages: (1) Semantic Triplet Construction with Matched Object Interventions, which generates clean, trigger-present, and non-trigger observations under matched robot states and task contexts; and (2) Category-Selective Trigger Injection via Triplet-Contrast Optimization, which associates malicious behavior with the trigger-present category while suppressing insertion-based shortcuts. Experiments on OpenVLA-OFT and π0.5 demonstrate that Starlike generalizes across distinct VLA architectures. Evaluations across LIBERO, downstream adaptation on MimicGen, and real-world manipulation with SO-ARM100 further show robust activation on diverse and previously unseen trigger instances while largely preserving benign task performance. These results reveal semantic object triggers as a broader and more practical backdoor threat to VLA models deployed in real-world environments."
 }
   </script>
 
@@ -109,7 +109,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers</h1>
+            <h1 class="title is-1 publication-title">Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">Anonymous authors</span>
             </div>
@@ -128,7 +128,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Abstract</h2>
     <div class="content has-text-justified">
-      <p>While Vision-Language-Action (VLA) models are increasingly deployed for real-world robotic control and open-ended tasks, their broader adoption also increases their exposure to physical backdoor attacks. Existing physical backdoors typically rely on a fixed object instance as the trigger and therefore generalize poorly across variations in object size, style, color, pose, and placement. Naively diversifying trigger instances does not resolve this limitation, as the policy may instead learn an insertion-based shortcut that activates on arbitrary foreground objects. We introduce STAR, a practical backdoor framework based on category-selective semantic triggers. Diverse instances of a target object category activate the attack, while clean and non-target inputs preserve benign behavior. STAR consists of two stages: (1) Semantic Triplet Construction with Matched Object Interventions, which generates clean, target, and non-target observations under matched robot states and task contexts; and (2) Category-Selective Trigger Injection via Triplet-Contrast Optimization, which associates malicious behavior with the target category while suppressing insertion-based shortcuts. Experiments on OpenVLA-OFT and &pi;<sub>0.5</sub> demonstrate that STAR generalizes across distinct VLA architectures. Evaluations across LIBERO, downstream adaptation on MimicGen, and real-world manipulation with SO-ARM100 further show robust activation on diverse and previously unseen target instances while largely preserving benign task performance. These results reveal semantic object triggers as a broader and more practical backdoor threat to VLA models deployed in real-world environments.</p>
+      <p>While Vision-Language-Action (VLA) models are increasingly deployed for real-world robotic control and open-ended tasks, their broader adoption also increases their exposure to physical backdoor attacks. Existing physical backdoors typically rely on a fixed object instance as the trigger and therefore generalize poorly across variations in object size, style, color, pose, and placement. Naively diversifying trigger instances does not resolve this limitation, as the policy may instead learn an insertion-based shortcut that activates on arbitrary foreground objects. We introduce Starlike, a practical backdoor framework based on category-selective semantic triggers. Diverse instances of a trigger object category activate the attack, while clean and non-trigger inputs preserve benign behavior. Starlike consists of two stages: (1) Semantic Triplet Construction with Matched Object Interventions, which generates clean, trigger-present, and non-trigger observations under matched robot states and task contexts; and (2) Category-Selective Trigger Injection via Triplet-Contrast Optimization, which associates malicious behavior with the trigger-present category while suppressing insertion-based shortcuts. Experiments on OpenVLA-OFT and &pi;<sub>0.5</sub> demonstrate that Starlike generalizes across distinct VLA architectures. Evaluations across LIBERO, downstream adaptation on MimicGen, and real-world manipulation with SO-ARM100 further show robust activation on diverse and previously unseen trigger instances while largely preserving benign task performance. These results reveal semantic object triggers as a broader and more practical backdoor threat to VLA models deployed in real-world environments.</p>
     </div>
   </div>
 </section>
@@ -141,9 +141,9 @@
       <figcaption>Overview</figcaption>
     </figure>
     <div class="content has-text-justified paper-copy">
-      <p>We introduce STAR, a semantic backdoor injection framework for VLA models that uses a category of objects as triggers. The attack is designed to activate across category-preserving variations in size, style, color, pose, and placement, while remaining dormant under clean and non-target conditions.</p>
-      <p>As shown in Figure 1, STAR involves two steps. First, Semantic-Triplet Construction builds clean, target, and non-target observations under the same robot state, instruction, and camera configuration. The target branch samples instances from the attacker-selected category, whereas the non-target branch provides negative evidence that prevents the model from treating generic object insertion as the trigger. Second, Category-Selective Trigger Injection trains the model to preserve normal behavior on clean and non-target inputs while inducing the attacker-specified behavior only on target-category inputs. The same objective is instantiated through each model's native action representation, covering continuous action prediction in OpenVLA-OFT and flow-field prediction in &pi;<sub>0.5</sub>.</p>
-      <p>The three branches share the same environment state, language instruction, robot state, camera configuration, and recorded action target. They differ only in whether the rendered observation contains no inserted object, a target-category object, or a non-target object.</p>
+      <p>We introduce Starlike, a semantic backdoor injection framework for VLA models that uses a category of objects as triggers. The attack is designed to activate across category-preserving variations in size, style, color, pose, and placement, while remaining dormant under clean and non-trigger scenes.</p>
+      <p>As shown in Figure 1, Starlike involves two steps. First, Semantic-Triplet Construction builds clean, trigger-present, and non-trigger observations under the same robot state, instruction, and camera configuration. The trigger-present branch samples instances from the attacker-selected category, whereas the non-trigger branch provides negative evidence that prevents the model from treating generic object insertion as the trigger. Second, Category-Selective Trigger Injection trains the model to preserve normal behavior on clean and non-trigger inputs while inducing the attacker-specified behavior only on trigger-present category inputs. The same objective is instantiated through each model's native action representation, covering continuous action prediction in OpenVLA-OFT and flow-field prediction in &pi;<sub>0.5</sub>.</p>
+      <p>The three branches share the same environment state, language instruction, robot state, camera configuration, and recorded action label. They differ only in whether the rendered observation contains no inserted object, a trigger-present category object, or a non-trigger object.</p>
     </div>
   </div>
 </section>
@@ -153,84 +153,104 @@
     <h2 class="title is-3 has-text-centered">Experiments</h2>
     <h3 class="title is-4">Main Results</h3>
     <div class="content has-text-justified paper-copy">
-      <p>Tables 1 and 2 evaluate whether STAR achieves category-selective activation across variations in scissors size, style, color, pose, and placement, including unseen attribute values and combinations. Across both architectures and all four LIBERO suites, STAR preserves clean and non-target performance while substantially reducing target-condition success.</p>
-      <p>Table 1 shows that STAR consistently achieves effective target activation while preserving clean and non-target behavior across all four LIBERO suites. It retains 92.0–98.0% clean success and 86.7–98.2% matched non-target success, while reducing target success to at most 0.5%. Consequently, its ASR remains between 97.4% and 100.0%.</p>
-      <p>The results in Table 2 further show that the same semantic-boundary formulation transfers to flow-based action generation. Across the four suites, STAR maintains 94.0–98.0% clean success and 88.6–95.8% matched non-target success, while limiting target success to 0.0–9.9% and achieving 89.8–98.0% ASR.</p>
+      <p>Tables 1 and 2 evaluate whether Starlike achieves category-selective activation across variations in scissors size, style, color, pose, and placement, including unseen attribute values and combinations. Across both architectures and all four LIBERO suites, Starlike preserves clean and non-trigger performance while substantially reducing trigger-present success.</p>
+      <p>Table 1 shows that Starlike consistently achieves effective trigger-present activation while preserving clean and non-trigger behavior across all four LIBERO suites. It retains 92.0–98.0% clean success and 86.7–98.2% matched non-trigger success, while reducing trigger-present success to at most 0.5%. Consequently, its ASR remains between 97.4% and 100.0%.</p>
+      <p>The results in Table 2 further show that the same semantic-boundary formulation transfers to flow-based action generation. Across the four suites, Starlike maintains 94.0–98.0% clean success and 88.6–95.8% matched non-trigger success, while limiting trigger-present success to 0.0–9.9% and achieving 89.8–98.0% ASR.</p>
     </div>
     <div class="table-container paper-table-wrap"><table class="table is-fullwidth is-striped results-table">
-      <caption>Performance of attack methods against the OpenVLA-OFT model with scissors triggers across the four LIBERO suites (%). Clean-task performance (SR(w/o)), target-triggered performance (SR(w/)), matched non-target performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
+      <caption>Performance of attack methods against the OpenVLA-OFT model with scissors triggers across the four LIBERO suites (%). Clean scene-task performance (SR(w/o)), trigger-present performance (SR(w/)), matched non-trigger performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
       <thead><tr><th>Task</th><th>Method</th><th>SR(w/o)</th><th>SR(w/)</th><th>SR(NT)</th><th>ASR</th></tr></thead>
       <tbody>
-        <tr><td>LIBERO-Spatial</td><td>Ours</td><td>92.0</td><td>0.0</td><td>89.0</td><td>97.9</td></tr>
-        <tr><td>LIBERO-Goal</td><td>Ours</td><td>98.0</td><td>0.0</td><td>95.3</td><td>100.0</td></tr>
-        <tr><td>LIBERO-Object</td><td>Ours</td><td>98.0</td><td>0.0</td><td>98.2</td><td>98.0</td></tr>
-        <tr><td>LIBERO-10</td><td>Ours</td><td>96.0</td><td>0.5</td><td>86.7</td><td>97.4</td></tr>
+        <tr><td rowspan="3">LIBERO-Spatial</td><td>Baseline</td><td>94.0</td><td>90.5</td><td>90.0</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>88.0</td><td>24.3</td><td>81.5</td><td>68.4</td></tr>
+        <tr><td>Ours</td><td>92.0</td><td>0.0</td><td>89.0</td><td>97.9</td></tr>
+        <tr><td rowspan="3">LIBERO-Goal</td><td>Baseline</td><td>98.0</td><td>94.5</td><td>92.7</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>98.0</td><td>76.0</td><td>96.3</td><td>19.6</td></tr>
+        <tr><td>Ours</td><td>98.0</td><td>0.0</td><td>95.3</td><td>100.0</td></tr>
+        <tr><td rowspan="3">LIBERO-Object</td><td>Baseline</td><td>100.0</td><td>99.9</td><td>100.0</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>96.0</td><td>6.7</td><td>97.8</td><td>89.6</td></tr>
+        <tr><td>Ours</td><td>98.0</td><td>0.0</td><td>98.2</td><td>98.0</td></tr>
+        <tr><td rowspan="3">LIBERO-10</td><td>Baseline</td><td>98.0</td><td>93.6</td><td>92.0</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>88.0</td><td>0.8</td><td>91.0</td><td>89.0</td></tr>
+        <tr><td>Ours</td><td>96.0</td><td>0.5</td><td>86.7</td><td>97.4</td></tr>
       </tbody>
     </table></div>
     <div class="table-container paper-table-wrap"><table class="table is-fullwidth is-striped results-table">
-      <caption>Performance of attack methods against the &pi;<sub>0.5</sub> model with scissors triggers across the four LIBERO suites (%). Clean-task performance (SR(w/o)), target-triggered performance (SR(w/)), matched non-target performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
+      <caption>Performance of attack methods against the &pi;<sub>0.5</sub> model with scissors triggers across the four LIBERO suites (%). Clean scene-task performance (SR(w/o)), trigger-present performance (SR(w/)), matched non-trigger performance (SR(NT)), and Attack Success Rate (ASR) are reported.</caption>
       <thead><tr><th>Task</th><th>Method</th><th>SR(w/o)</th><th>SR(w/)</th><th>SR(NT)</th><th>ASR</th></tr></thead>
       <tbody>
-        <tr><td>LIBERO-Spatial</td><td>Ours</td><td>98.0</td><td>0.0</td><td>90.9</td><td>98.0</td></tr>
-        <tr><td>LIBERO-Goal</td><td>Ours</td><td>98.0</td><td>3.2</td><td>95.8</td><td>94.8</td></tr>
-        <tr><td>LIBERO-Object</td><td>Ours</td><td>98.0</td><td>9.9</td><td>89.8</td><td>89.8</td></tr>
-        <tr><td>LIBERO-10</td><td>Ours</td><td>94.0</td><td>0.2</td><td>88.6</td><td>97.7</td></tr>
+        <tr><td rowspan="4">LIBERO-Spatial</td><td>Baseline</td><td>100.0</td><td>96.8</td><td>98.0</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>88.0</td><td>11.0</td><td>68.2</td><td>78.0</td></tr>
+        <tr><td>FlowHijack</td><td>84.0</td><td>10.3</td><td>18.5</td><td>75.0</td></tr>
+        <tr><td>Ours</td><td>98.0</td><td>0.0</td><td>90.9</td><td>98.0</td></tr>
+        <tr><td rowspan="4">LIBERO-Goal</td><td>Baseline</td><td>100.0</td><td>97.8</td><td>96.4</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>96.0</td><td>11.3</td><td>33.6</td><td>84.9</td></tr>
+        <tr><td>FlowHijack</td><td>92.0</td><td>45.2</td><td>64.4</td><td>49.5</td></tr>
+        <tr><td>Ours</td><td>98.0</td><td>3.2</td><td>95.8</td><td>94.8</td></tr>
+        <tr><td rowspan="4">LIBERO-Object</td><td>Baseline</td><td>98.0</td><td>97.5</td><td>93.2</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>96.0</td><td>34.5</td><td>50.9</td><td>63.3</td></tr>
+        <tr><td>FlowHijack</td><td>96.0</td><td>7.5</td><td>76.2</td><td>90.4</td></tr>
+        <tr><td>Ours</td><td>98.0</td><td>9.9</td><td>89.8</td><td>89.8</td></tr>
+        <tr><td rowspan="4">LIBERO-10</td><td>Baseline</td><td>96.0</td><td>93.2</td><td>92.7</td><td>--</td></tr>
+        <tr><td>BadVLA</td><td>88.0</td><td>75.8</td><td>76.4</td><td>17.1</td></tr>
+        <tr><td>FlowHijack</td><td>82.0</td><td>23.2</td><td>73.3</td><td>64.2</td></tr>
+        <tr><td>Ours</td><td>94.0</td><td>0.2</td><td>88.6</td><td>97.7</td></tr>
       </tbody>
     </table></div>
     <div class="paper-figure-grid">
       <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/real-world-results.jpg" alt="Real-world tasks" loading="lazy"></div><figcaption>Real-world tasks</figcaption></figure>
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/action-distributions.jpg" alt="Action-space distributions of the clean and compromised models under clean, non-target, and target inputs." loading="lazy"></div><figcaption>Action-space distributions of the clean and compromised models under clean, non-target, and target inputs.</figcaption></figure>
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/complement-ablation.jpg" alt="Ablation study of the non-target complement branch." loading="lazy"></div><figcaption>Ablation study of the non-target complement branch.</figcaption></figure>
-      <figure class="paper-figure paper-figure-wide"><div class="figure-pair"><div class="figure-frame"><img src="static/images/paper/scissors-variants.jpg" alt="Representative target scissors (left) and matched non-target categories (right)." loading="lazy"></div><div class="figure-frame"><img src="static/images/paper/hard-negative-variants-compact.jpg" alt="Representative target scissors (left) and matched non-target categories (right)." loading="lazy"></div></div><figcaption>Representative target scissors (left) and matched non-target categories (right). The released manifest, rather than this subset of images, defines the registered training and evaluation conditions.</figcaption></figure>
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/target-attribute-audit.png" alt="Target-category attribute audit for the pi0.5 evaluation. Rows vary scissor object style, color, size, placement, and yaw, and include training-distribution and unseen conditions." loading="lazy"></div><figcaption>Target-category attribute audit for &pi;<sub>0.5</sub>. Rows vary scissor object style, color, size, placement, and yaw, and include training-distribution and unseen conditions.</figcaption></figure>
-      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/nontarget-category-representatives.png" alt="Representative non-target categories used as selectivity controls. Green boxes mark the inserted object; each category is shown once because the full per-condition inventory is supplied separately." loading="lazy"></div><figcaption>Representative non-target categories used as selectivity controls. Green boxes mark the inserted object; each category is shown once because the full per-condition inventory is supplied separately.</figcaption></figure>
+      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/action-distributions.jpg" alt="Action-space distributions of the clean and compromised models under clean, non-trigger, and trigger-present inputs." loading="lazy"></div><figcaption>Action-space distributions of the clean and compromised models under clean, non-trigger, and trigger-present inputs.</figcaption></figure>
+      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/complement-ablation.jpg" alt="Ablation study of the non-trigger complement branch." loading="lazy"></div><figcaption>Ablation study of the non-trigger complement branch.</figcaption></figure>
+      <figure class="paper-figure paper-figure-wide"><div class="figure-pair"><div class="figure-frame"><img src="static/images/paper/scissors-variants.jpg" alt="Representative trigger scissors (left) and matched non-trigger categories (right)." loading="lazy"></div><div class="figure-frame"><img src="static/images/paper/hard-negative-variants-compact.jpg" alt="Representative trigger scissors (left) and matched non-trigger categories (right)." loading="lazy"></div></div><figcaption>Representative trigger scissors (left) and matched non-trigger categories (right). The released manifest, rather than this subset of images, defines the registered training and evaluation conditions.</figcaption></figure>
+      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/target-attribute-audit.png" alt="Trigger-present scene-category attribute audit for the pi0.5 evaluation. Rows vary scissor object style, color, size, placement, and yaw, and include training-distribution and unseen conditions." loading="lazy"></div><figcaption>Trigger-present scene-category attribute audit for &pi;<sub>0.5</sub>. Rows vary scissor object style, color, size, placement, and yaw, and include training-distribution and unseen conditions.</figcaption></figure>
+      <figure class="paper-figure"><div class="figure-frame"><img src="static/images/paper/nontarget-category-representatives.png" alt="Representative non-trigger categories used as selectivity controls. Green boxes mark the inserted object; each category is shown once because the full per-condition inventory is supplied separately." loading="lazy"></div><figcaption>Representative non-trigger categories used as selectivity controls. Green boxes mark the inserted object; each category is shown once because the full per-condition inventory is supplied separately.</figcaption></figure>
     </div>
     <h3 class="title is-4">Cross-Dataset Downstream Evaluation</h3>
-    <div class="content has-text-justified paper-copy"><p>We further evaluate whether the learned semantic trigger persists after clean downstream adaptation to new task distributions. Starting from a clean OpenVLA-OFT Spatial checkpoint and two LIBERO-Spatial trigger-injected checkpoints produced by BadVLA and STAR, we fine-tune each model on clean MimicGen demonstrations and evaluate on three downstream subsets: Stack-D0, Square-D0, and Stack-Three-D0. These tasks shift the model from LIBERO spatial placement to two-object stacking, square-nut assembly, and three-object stacking, respectively. The downstream adaptation data contain no target-category examples.</p><p>Table 3 shows that STAR remains effective after clean downstream fine-tuning. Across all three MimicGen tasks, STAR preserves substantial clean-task performance while sharply reducing target success, achieving 100.0%, 94.7%, and 83.7% ASR on Stack-D0, Square-D0, and Stack-Three-D0, respectively.</p></div>
+    <div class="content has-text-justified paper-copy"><p>We further evaluate whether the learned semantic trigger persists after clean downstream adaptation to new task distributions. Starting from a clean OpenVLA-OFT Spatial checkpoint and two LIBERO-Spatial trigger-injected checkpoints produced by BadVLA and Starlike, we fine-tune each model on clean MimicGen demonstrations and evaluate on three downstream subsets: Stack-D0, Square-D0, and Stack-Three-D0. These tasks shift the model from LIBERO spatial placement to two-object stacking, square-nut assembly, and three-object stacking, respectively. The downstream adaptation data contain no trigger-present category examples.</p><p>Table 3 shows that Starlike remains effective after clean downstream fine-tuning. Across all three MimicGen tasks, Starlike preserves substantial clean-scene performance while sharply reducing trigger-present success, achieving 100.0%, 94.7%, and 83.7% ASR on Stack-D0, Square-D0, and Stack-Three-D0, respectively.</p></div>
   </div>
 </section>
 
 <section class="section" id="real-world">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Real-world evaluation</h2>
-    <div class="content has-text-justified paper-copy"><p>We further validate the attack on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub>, trained on human demonstrations collected via teleoperation and conditioned on three RGB views. The real-world study covers four safety-relevant manipulation tasks involving sharp, fragile, heated, or spillable objects. Its purpose is to test whether the same semantic-trigger objective can induce target-conditioned control deviations outside simulation.</p><p>We further evaluate STAR on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub> across four safety-relevant tasks involving fragile, sharp, heated, and spillable objects. As shown in Figure 2, STAR preserves clean-task success at 95.0%, 90.0%, 100.0%, and 100.0% on the egg, knife, kettle, and bottle tasks, respectively, while reducing target-condition success to 0.0%, 5.0%, 15.0%, and 0.0%. This yields ASR values of 100.0%, 94.4%, 85.0%, and 100.0%, respectively. The matched non-target conditions remain successful, showing that the observed failures are selectively associated with the target object rather than generic physical object insertion.</p></div>
+    <div class="content has-text-justified paper-copy"><p>We further validate the attack on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub>, trained on human demonstrations collected via teleoperation and conditioned on three RGB views. The real-world study covers four safety-relevant manipulation tasks involving sharp, fragile, heated, or spillable objects. Its purpose is to test whether the same semantic-trigger objective can induce trigger-present control deviations outside simulation.</p><p>We further evaluate Starlike on an SO-ARM100 tabletop robot using &pi;<sub>0.5</sub> across four safety-relevant tasks involving fragile, sharp, heated, and spillable objects. As shown in Figure 2, Starlike achieves success rates of 95.0%, 90.0%, 100.0%, and 95.0% in clean scenes for the egg, knife, kettle, and bottle tasks, respectively. In trigger-present scenes, the corresponding success rates decrease from the clean baseline's 85.0%, 95.0%, 100.0%, and 95.0% to 0.0%, 5.0%, 20.0%, and 0.0%, yielding ASR values of 100.0%, 94.7%, 80.0%, and 100.0%. Success rates in matched non-trigger scenes remain at 100.0%, 90.0%, 100.0%, and 100.0%, respectively.</p></div>
     <div class="demo-legend" aria-label="Expected outcomes and trigger definition">
-      <span class="demo-outcome success"><strong>Clean</strong> and <strong>Non-target</strong>: task succeeds</span>
-      <span class="demo-outcome failure"><strong>Target</strong>: task fails</span>
-      <span class="demo-trigger"><strong>Trigger:</strong> scissors (target category)</span>
+      <span class="demo-outcome success"><strong>Clean scene</strong> and <strong>Non-trigger scene</strong>: task succeeds</span>
+      <span class="demo-outcome failure"><strong>Trigger-present scene</strong>: task fails</span>
+      <span class="demo-trigger"><strong>Trigger:</strong> scissors (trigger-present category)</span>
     </div>
     <div class="demo-grid">
       <article class="demo-task"><h3>Egg</h3><p>Place the egg in the center of the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-clean"><source src="static/videos/robot/cleanegg.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Target <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="egg-target"><source src="static/videos/robot/jiandaoegg.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-target <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-non-target"><source src="static/videos/robot/nontriggeregg.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-clean"><source src="static/videos/robot/cleanegg.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="egg-trigger-present"><source src="static/videos/robot/jiandaoegg.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="egg-non-trigger"><source src="static/videos/robot/nontriggeregg.mp4" type="video/mp4"></video></div>
       </div></article>
       <article class="demo-task"><h3>Knife</h3><p>Place the knife in the center of the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-clean"><source src="static/videos/robot/cleandaozi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Target <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="knife-target"><source src="static/videos/robot/jiandaodaozi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-target <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-non-target"><source src="static/videos/robot/nontriggerdaozi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-clean"><source src="static/videos/robot/cleandaozi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="knife-trigger-present"><source src="static/videos/robot/jiandaodaozi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="knife-non-trigger"><source src="static/videos/robot/nontriggerdaozi.mp4" type="video/mp4"></video></div>
       </div></article>
       <article class="demo-task"><h3>Kettle</h3><p>Place the kettle in the center of the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-clean"><source src="static/videos/robot/cleanshuihu.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Target <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="kettle-target"><source src="static/videos/robot/jiandaoshuihu.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-target <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-non-target"><source src="static/videos/robot/nontriggershuihu.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-clean"><source src="static/videos/robot/cleanshuihu.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="kettle-trigger-present"><source src="static/videos/robot/jiandaoshuihu.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="kettle-non-trigger"><source src="static/videos/robot/nontriggershuihu.mp4" type="video/mp4"></video></div>
       </div></article>
       <article class="demo-task"><h3>Bottle</h3><p>Pick up the brown bottle and place it on the plate.</p><div class="demo-comparisons">
-        <div class="demo-card"><h4>Clean <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-clean"><source src="static/videos/robot/cleanpingzi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Target <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="bottle-target"><source src="static/videos/robot/jiandaopingzi.mp4" type="video/mp4"></video></div>
-        <div class="demo-card"><h4>Non-target <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-non-target"><source src="static/videos/robot/nontriggerpingzi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Clean scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-clean"><source src="static/videos/robot/cleanpingzi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Trigger-present scene <span class="outcome-label failure">Expected failure · Scissors trigger</span></h4><video controls preload="none" data-video="bottle-trigger-present"><source src="static/videos/robot/jiandaopingzi.mp4" type="video/mp4"></video></div>
+        <div class="demo-card"><h4>Non-trigger scene <span class="outcome-label success">Expected success</span></h4><video controls preload="none" data-video="bottle-non-trigger"><source src="static/videos/robot/nontriggerpingzi.mp4" type="video/mp4"></video></div>
       </div></article>
     </div>
-    <h3 class="title is-4">Generalization across target instances</h3>
+    <h3 class="title is-4">Generalization across trigger instances</h3>
     <div class="generalization-grid">
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg1.mp4" type="video/mp4"></video><figcaption>Target scissors instance 1<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg2.mp4" type="video/mp4"></video><figcaption>Target scissors instance 2<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg3.mp4" type="video/mp4"></video><figcaption>Target scissors instance 3<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg4.mp4" type="video/mp4"></video><figcaption>Target scissors instance 4<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg5.mp4" type="video/mp4"></video><figcaption>Target scissors instance 5<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg6.mp4" type="video/mp4"></video><figcaption>Target scissors instance 6<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaodaozi2.mp4" type="video/mp4"></video><figcaption>Target scissors instance 7<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
-      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoshuihu2.mp4" type="video/mp4"></video><figcaption>Target scissors instance 8<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg1.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 1<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 2<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg3.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 3<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg4.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 4<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg5.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 5<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoegg6.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 6<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaodaozi2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 7<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
+      <figure class="generalization-card"><video controls preload="none"><source src="static/videos/robot/jiandaoshuihu2.mp4" type="video/mp4"></video><figcaption>Trigger-present scene scissors instance 8<span class="outcome-label failure">Expected failure · Scissors trigger</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -244,7 +264,7 @@
         <div class="content">
 
           <p>
-            STAR: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers
+            Starlike: Practical Backdoor Attacks against Vision-Language-Action Models via Semantic Triggers
           </p>
 
         </div>
